@@ -4,13 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Variables</title>
+    <title>JS Flow control</title>
 </head>
 <body>
-    <h1>Javascript variables</h1>
+    <h1>Javascript Flow Control</h1>
     <p>Press F12 to show developer tools</p>
     <script>
-        
+        // Assignment operators
+        // =, +=, -=, ++, --
+        // assignment operator,
+        // add the right hand side of an assignment statement to the left hand side variable,
+        // remove the right hand side of an assignment statement to the left hand side variable,
+        // add one to the right hand side vairable (must be added to a variable statment)
+        // remove one to the right hand side vairable (must be added to a variable statment)
+
+        // Logical operators
+        // ||, &&, !!, !, ==, ===, !=, !==,
+        // if left hand side or right hand side is true => true
+        // if left hand side and right hand side is true => true
+        // truthy falsey check
+        // inverse
+        // equality operator,
+        // equality operator (does type checking too),
+        // inequlity oprator,
+        // inequlity oprator (does type checking),
+        let a = 1;
+        let b = 5;
+        let c = '1';
+        console.log(a);
+        // flow control
+        if (a == b) {
+            console.log('a and b are equal');
+        } else {
+            console.log('a and b are not equal');
+        }
+
+        if (a != b) {
+            console.log('a and b are not equal');
+        } else {
+            console.log('a and b are equal');
+        }
+
+        if (a == c) {
+            console.log('a and c are equal');
+        } else {
+            console.log('a and c are not equal');
+        }
+
+        if (a === c) {
+            console.log('a and c are equal and are of the same type');
+        } else {
+            console.log('a and c might be equal but are not of the same type');
+        }
     </script>
 </body>
 </html>
