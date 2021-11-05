@@ -5,12 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Variables</title>
+    <script src="script.js"></script>
 </head>
 <body>
     <h1>Javascript variables</h1>
     <p>Press F12 to show developer tools</p>
     <script>
-        
+        // Function in ES5
+        // function fname(fparameter/farugument) {
+            // Function body
+        //}
+        function sumTwoNumbers(n1, n2) {
+            return n1 + n2;
+        }
+        function printMyName(name) {
+            alert(name);
+        }
+        // Putting function in variable
+        const pname = function (name) {
+            // printMyName(name);
+            console.log(name);
+        };
+        console.log(sumTwoNumbers(1, 2));
+        // printMyName('Hamid Samimi');
+        pname('test');
+        const animal = {
+            name: 'animal name',
+            makeSound: function () {
+                console.log('souuuuuuuuuuuuuuund');
+            },
+        };
+        console.log(animal.makeSound())
+        // ----------------------------
+        const foo = () => console.log('bar');
+        const multiply = (a, b) => a * b;
+        foo();
+        const result = multiply(2, 4);
+        console.log(result);
+        const animal1 = {
+            name: 'a1',
+            makeSound: () => console.log('aaaaaa'),
+        };
+        animal1.makeSound();
+        // ---------------------------
+        const fizzbuzz = (count) => {
+            for (let i = 1; i <= count; i++) {
+                if ((i % 3 === 0) && (i % 5 === 0)) {
+                    console.log(i, 'fizzbuzz');
+                }
+                if (i % 5 === 0) {
+                    console.log(i, 'buzz');
+                }
+                if (i % 3 === 0) {
+                    console.log(i, 'fizz');
+                }
+            }
+        }
+        fizzbuzz(100);
     </script>
 </body>
 </html>
